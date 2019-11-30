@@ -1,0 +1,7 @@
+body{
+    background-image: url('/static/images/bgimage.jpg');
+}
+h1{
+    color: darkcyan;
+    text-align: center;
+}
