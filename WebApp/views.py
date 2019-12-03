@@ -10,8 +10,9 @@ def EmpView(request):
             print("Validations are Success...!!")
             print(form.cleaned_data['Name'])
             print(form.cleaned_data['Salary'])
-            print(form.cleaned_data['Opinion'])
-            return HttpResponseRedirect('/Thanks')
+            # print(form.cleaned_data['Opinion'])
+            # print(form.cleaned_data['Email'])
+            return HttpResponseRedirect('/thanks')
     else:
         form = forms.EmpForm()
     return render(request, 'WebApp/Form.html', {'form': form})
